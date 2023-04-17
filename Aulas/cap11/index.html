@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML 5</title>
+</head>
+<body>
+    <h1>Imagens Flexiveis </h1>
+    <p>Teste de diferentes tamanhos de tela
+    </p>
+<!--
+    <picture>
+        <source media="(max-width:350px )" srcset="imagens/grande.png" type="image/png">
+        <source media="(max-width:750px )" srcset="imagens/media.png" type="image/png">
+        <img src="imagens/pequeno.png" alt="imagem flexivel">
+    </picture>
+-->
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/pequeno.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/media.png" type="image/png">
+        <img src="imagens/grande.png" alt="imagem flexivel">
+    </picture>
+
+    <h1>Audios </h1>
+    <p>Maneira 1</p>
+    <audio src="audio/Sideways Samba - Audionautix.mp3" controls></audio>
+
+    <p>Maneira 2</p>
+    <audio preload="metadata" controls>
+        <source src="audio/Sideways Samba - Audionautix.mp3" type="audio/mpeg">
+    </audio>
+<!-- tbm é possivel adicionar outros formatos de audio na maneira dois, como ogg e wav, assim caso o navegador não reconheça um formato, ele tente o próximo, e lembrando wav pode ser mais pesado, então não é tão recomendado -->
+
+
+<h1>Inserir Videos com Hospedagem interna</h1>
+<video width="500" poster="imagens/pequeno.png" controls>
+    <source src="videos/video-teste.mp4" type="video/mp4">
+    <source src="videos/video-teste.m4v" type="video/mp4">
+    <source src="videos/video-teste.ogv" type="video/ogv">
+    <p>seu navegador não é compativel com reprodução de video</p>
+</video>
+<!-- Dessa forma acima, é possivel inserir videos de hospedagem interna do site, dessa forma o site se torma mais pesado em questão de hospedagem dos dados, devido a necessidade de dowloads dos arquivos do bando de dados interno-->
+
+
+<h1>Video Inserido com hospedagem externa</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<!--Dessa forma os videos podem ser inseridos de hospedagens externas, de serviços de videos, deixando de utilizar dados que podem pesar o site/servidor do cliente-->
+
+</body>
+</html>
