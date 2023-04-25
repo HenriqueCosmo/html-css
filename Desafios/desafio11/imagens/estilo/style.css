@@ -1,0 +1,19 @@
+body{
+    
+    background-image: url('../espaco.jpg');
+    position: relative;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-attachment: local;
+}
+
+section{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 25% );
+}
+
+img{
+    width: 75vh;
+}
