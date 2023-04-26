@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead{
+            background-color: rgba(0, 187, 255, 0.864);
+        }
+
+        tfoot{
+            background-color: greenyellow;
+        }
+
+        td.num{
+            text-align: right;
+        }
+
+        td.porcentagem{
+            text-align: center;
+            
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <h1>Uso de tabelas grandes </h1>
+
+    <!-- Anatomia de Tabelas Grandes
+        THEAD
+            tr, td, th
+        TBODY
+            tr, td, th
+        TFOOT
+            tr, td, th
+    -->
+    <!--Valores Ficticios para treino!!!-->
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+                <th>% da população</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> São Paulo</td>
+                <td class="num"> 41 262 199 </td>
+                <td class="porcentagem">22,2%</td>
+                
+            </tr>
+            <tr>
+                <td>Minas Gerais </td>
+                <td class="num">19 597 330</td>
+                <td class="porcentagem"> 10,0%</td>
+            </tr>
+            <tr>
+                <td>Rio de Janiero </td>
+                <td class="num">15 989 929</td>
+                <td class="porcentagem">8,0%</td>
+            </tr>
+            <tr>
+                <td>bahia </td>
+                <td class="num">14 659 023</td>
+                <td class="porcentagem">7,1%</td>
+            </tr>
+            <tr>
+                <td>Paraná </td>
+                <td class="num">11 835 065</td>
+                <td class="porcentagem">5,7%</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul </td>
+                <td class="num">11 088 065</td>
+                <td class="porcentagem">8,0%</td>
+            </tr>
+            <tr>
+                <td>Pernambuco  </td>
+                <td class="num">9 051 113</td>
+                <td class="porcentagem">4,4%</td>
+            </tr>
+            <tr>
+                <td>Ceará </td>
+                <td class="num">8 452 381</td>
+                <td class="porcentagem">4,3%</td>
+            </tr>
+            <tr>
+                <td>Pará </td>
+                <td class="num">8 442 962</td>
+                <td class="porcentagem">4,1%</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina </td>
+                <td class="num">7 762 154</td>
+                <td class="porcentagem">3,7%</td>
+            </tr>
+            <tr>
+                <td>Goiás </td>
+                <td>6 950 976</td>
+                <td class="porcentagem">3,3%</td>
+            </tr>
+            <tr>
+                <td>Maranhão </td>
+                <td class="num">6 800 605</td>
+                <td class="porcentagem">3,3%</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo </td>
+                <td class="num">4 108 508</td>
+                <td class="porcentagem">1,9%</td>
+            </tr>
+            <tr>
+                <td>Paraíba </td>
+                <td class="num">4 030 961</td>
+                <td class="porcentagem">1,9%</tr>
+            </tr>
+            <tr>
+                <td>Amazonas </td>
+                <td class="num">3 952 262</td>
+                <td class="porcentagem">1,9%</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <td class="num"><strong>174 455 426</strong></td>
+                <td class="porcentagem"><strong>64,7%</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
