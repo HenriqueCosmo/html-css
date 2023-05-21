@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <title>Menu Responsivo</title>
     <link rel="stylesheet" href="estilos/style.css">
 </head>
@@ -11,7 +13,8 @@
     
     <header>
         <h1>Menu</h1>
-        <menu>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Home</a> </li>
                 <li><a href="#">Tecnologia</a> </li>
@@ -34,5 +37,17 @@
                 Praesentium tempora minima pariatur expedita ex commodi, vero accusantium natus quo odit reprehenderit rerum harum inventore at assumenda architecto earum magnam nesciunt laboriosam laudantium magni corporis eligendi, totam mollitia. Cum.</p>
         </article>
     </main>
+
+    <script>
+        function clickMenu(){
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+            
+        }
+    </script>
 </body>
+
 </html>

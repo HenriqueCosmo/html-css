@@ -25,7 +25,7 @@ header > h1{
 }
 
 menu{
-    display: block;
+    display: none;
 }
 
 menu > ul{
@@ -66,4 +66,20 @@ article > p{
     text-align: justify;
     margin-bottom: 20px;
     text-indent: 20px;
+}
+
+#burguer{
+    background-color: rgb(54, 54, 54);
+    width: 100vw;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+span#burguer:hover{
+    background-color: white;
+    color: black;
 }
