@@ -8,8 +8,9 @@
       rel="stylesheet">
     <title>Menu Responsivo</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media.style.css">
 </head>
-<body>
+<body onresize="mudoTamanho">
     
     <header>
         <h1>Menu</h1>
@@ -46,6 +47,14 @@
                 itens.style.display = 'block'
             }
             
+        }
+
+        function mudoTamanho(){
+            if (window.innerWidth >= 768){
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
         }
     </script>
 </body>
