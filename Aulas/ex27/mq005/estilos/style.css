@@ -13,11 +13,11 @@ body, html{
 }
 
 header{
-    background-color:rgb(144, 144, 144) ;
+    background-color: rgb(169, 169, 169);
 }
 
 header > h1{
-    background-color: rgb(169, 169, 169);
+    
     text-align: center;
     padding: 20px;
     color: white;
